@@ -1,0 +1,6 @@
+@KERNEL_SOURCE_ROOT ->
+tar xf mymodule.tgz
+
+then, build by ->
+cd $KERNEL_SOURCE_ROOT
+make M=./mymodules/ modules
