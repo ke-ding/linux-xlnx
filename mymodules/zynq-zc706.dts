@@ -47,6 +47,7 @@
 	bram0: {
 		compatible = "zynq-bram";
 		reg = <0xf0000000 0x10000>;
+		interrupts = <0 30 1>;
 	};
 };
 
