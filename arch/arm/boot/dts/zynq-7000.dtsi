@@ -1,6 +1,15 @@
 // SPDX-License-Identifier: GPL-2.0+
 /*
- * Copyright (C) 2011 - 2015 Xilinx
+ *  Copyright (C) 2011 - 2015 Xilinx
+ *
+ * This software is licensed under the terms of the GNU General Public
+ * License version 2, as published by the Free Software Foundation, and
+ * may be copied, distributed, and modified under those terms.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
  */
 
 / {
@@ -46,8 +55,7 @@
 		compatible = "arm,cortex-a9-pmu";
 		interrupts = <0 5 4>, <0 6 4>;
 		interrupt-parent = <&intc>;
-		reg = <0xf8891000 0x1000>,
-		      <0xf8893000 0x1000>;
+		reg = < 0xf8891000 0x1000 0xf8893000 0x1000 >;
 	};
 
 	regulator_vccpint: fixedregulator {
